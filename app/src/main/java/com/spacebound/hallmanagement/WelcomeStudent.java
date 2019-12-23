@@ -1,4 +1,4 @@
-package com.example.hallmanager;
+package com.spacebound.hallmanagement;
 
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
