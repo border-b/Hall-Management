@@ -12,3 +12,4 @@ public class AllocateSeat extends AppCompatActivity {
         setContentView(R.layout.activity_allocate_seat);
     }
 }
+//this is a test edit
