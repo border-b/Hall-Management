@@ -136,7 +136,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         });
 
     }
-//just testing
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
