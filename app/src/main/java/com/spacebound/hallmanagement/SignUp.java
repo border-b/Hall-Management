@@ -19,12 +19,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     ProgressBar progressBar;
     EditText editTextEmail, editTextPassword, editTextConPass, editTextRegNo;
     EditText editTextDept, editTextPhone, editTextName;
+    DatabaseReference databaseReference;
 
     private FirebaseAuth mAuth;
 
@@ -32,6 +35,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("StudentUser");
 
         editTextName = (EditText) findViewById(R.id.editTextName);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
@@ -50,13 +55,13 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void registerUser() {
-        String name = editTextName.getText().toString().trim();
-        String regNo = editTextRegNo.getText().toString().trim();
-        String email = editTextEmail.getText().toString().trim();
-        String password = editTextPassword.getText().toString().trim();
-        String confirmpass = editTextConPass.getText().toString().trim();
-        String dept = editTextDept.getText().toString().trim();
-        String phone = editTextPhone.getText().toString().trim();
+        final String name = editTextName.getText().toString().trim();
+        final String regNo = editTextRegNo.getText().toString().trim();
+        final String email = editTextEmail.getText().toString().trim();
+        final String password = editTextPassword.getText().toString().trim();
+        final String confirmpass = editTextConPass.getText().toString().trim();
+        final String dept = editTextDept.getText().toString().trim();
+        final String phone = editTextPhone.getText().toString().trim();
 
         if (name.isEmpty()) {
             editTextName.setError("Name is required");
@@ -114,11 +119,17 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         progressBar.setVisibility(View.VISIBLE);
 
+
+
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
+
+                    String key = databaseReference.push().getKey();
+                    StudentUser Student = new StudentUser(name, email, phone, regNo, dept);
+                    databaseReference.child(key).setValue(Student);
                     finish();
                     Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUp.this, WelcomeStudent.class));
