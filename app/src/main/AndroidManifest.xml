@@ -14,7 +14,7 @@
         <activity android:name=".VacantSeats" />
         <activity android:name=".UpdateNoticeBoard" />
         <activity android:name=".TodayMenu" />
-        <activity android:name=".Starter" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SearchStudent" />
         <activity android:name=".SanitationProblem" />
         <activity android:name=".ReviewComplaints" />
@@ -34,7 +34,7 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".WelcomeStudent" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Starter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
