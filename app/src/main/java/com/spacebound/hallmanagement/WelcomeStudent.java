@@ -1,7 +1,6 @@
-package com.spacebound.hallmanagement;
+package com.example.hallmanager;
 
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -68,7 +67,7 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
 
     }
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if (toggle.onOptionsItemSelected(item))
         {
             return true;
@@ -77,7 +76,7 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected(MenuItem menuItem) {
 
         Intent intent;
 
@@ -120,6 +119,12 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
         else if(menuItem.getItemId()==R.id.nav_requestforchangingseat)
         {
             intent = new Intent(this,ApplyForSeat.class);
+            startActivity(intent);
+        }
+
+        else if(menuItem.getItemId()==R.id.nav_SP)
+        {
+            intent = new Intent(this,StudentProfile.class);
             startActivity(intent);
         }
 
