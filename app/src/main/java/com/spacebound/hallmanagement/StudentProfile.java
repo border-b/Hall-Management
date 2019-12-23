@@ -17,5 +17,6 @@ import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class StudentProfile {
+public class StudentProfile extends AppCompatActivity {
+
 }
