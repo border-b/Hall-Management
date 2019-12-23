@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_vacantseats"
+            android:title="Vacant Seats" />
+        <item android:id="@+id/nav_allocateseats"
+            android:title="Allocate Seats" />
+        <item android:id="@+id/nav_searchstudent"
+            android:title="Search Student" />
+        <item android:id="@+id/nav_reviewcomplaints"
+            android:title="Review Complaints" />
+        <item android:id="@+id/nav_updatenotice"
+            android:title="Update Notice Board" />
+        <item android:id="@+id/nav_sendnotification"
+            android:title="Send Notification" />
+        <item android:id="@+id/nav_viewnoticeboard"
+            android:title="View Notice Board" />
+
+    </group>
+
+</menu>

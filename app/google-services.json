@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "430377899446",
+    "firebase_url": "https://hall-management-466d3.firebaseio.com",
+    "project_id": "hall-management-466d3",
+    "storage_bucket": "hall-management-466d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430377899446:android:e045c527b6f4cd7a4bdd17",
+        "android_client_info": {
+          "package_name": "com.spacebound.hallmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430377899446-skumjbmgvouk1ooiq7neg77n7vlfpr18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spacebound.hallmanagement",
+            "certificate_hash": "53e0b6f0f52042824ba420fcfc191a0452790897"
+          }
+        },
+        {
+          "client_id": "430377899446-uainjhe3gu2itog9vge4b3b7h9pkva1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3QGzW1Qf6mZd_sZHVTw0UrqubWcYIZzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430377899446-uainjhe3gu2itog9vge4b3b7h9pkva1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

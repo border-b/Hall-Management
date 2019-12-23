@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchStudent">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="381dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="24dp"
+        android:text="Search by Registration Number :"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="321dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="281dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="317dp"
+        android:background="@color/blue"
+        android:text="Go to Profile"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

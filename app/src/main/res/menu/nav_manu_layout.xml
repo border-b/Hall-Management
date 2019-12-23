@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_inbox"
+            android:title="Inbox" />
+        <item android:id="@+id/nav_notification"
+            android:title="Notification" />
+        <item android:id="@+id/nav_applyforseat"
+            android:title="Apply for Seat" />
+        <item android:id="@+id/nav_viewadmininfo"
+            android:title="View Admin Info" />
+        <item android:id="@+id/nav_viewfoodmenu"
+            android:title="View Food menu" />
+        <item android:id="@+id/nav_requestforchangingseat"
+            android:title="Request For Changing Seat" />
+        <item android:id="@+id/nav_submitcomplaints"
+            android:title="Submit Complaints" />
+        <item android:id="@+id/nav_viewnoticeboard"
+            android:title="View Notice Board" />
+
+    </group>
+
+</menu>

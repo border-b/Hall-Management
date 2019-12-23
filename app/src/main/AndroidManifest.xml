@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spacebound.hallmanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WriteComplain"></activity>
+        <activity android:name=".WelcomeAdmin" />
+        <activity android:name=".VacantSeats" />
+        <activity android:name=".UpdateNoticeBoard" />
+        <activity android:name=".TodayMenu" />
+        <activity android:name=".Starter" />
+        <activity android:name=".SearchStudent" />
+        <activity android:name=".SanitationProblem" />
+        <activity android:name=".ReviewComplaints" />
+        <activity android:name=".Others" />
+        <activity android:name=".Notification" />
+        <activity android:name=".Nav" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".InternetProblem" />
+        <activity android:name=".Inbox" />
+        <activity android:name=".HallAuthority" />
+        <activity android:name=".FoodProblem" />
+        <activity android:name=".EnterVerificationCode" />
+        <activity android:name=".ConfirmNewPassword" />
+        <activity android:name=".Complain" />
+        <activity android:name=".ApplyForSeat" />
+        <activity android:name=".AllocateSeat" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".WelcomeStudent" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
