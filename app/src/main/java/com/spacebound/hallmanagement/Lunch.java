@@ -1,4 +1,4 @@
-package com.example.hallmanagement;
+ package com.spacebound.hallmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
