@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lunch">
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:text="              Lunch Menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:text="1) Chicken Jhal Fry:       50tk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:text="2) Meat,Rice:                   80tk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:text="3) Mutton,Rice:             100tk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
