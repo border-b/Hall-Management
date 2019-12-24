@@ -22,6 +22,8 @@
             android:title="Submit Complaints" />
         <item android:id="@+id/nav_viewnoticeboard"
             android:title="View Notice Board" />
+        <item android:id="@+id/nav_searchstudent"
+            android:title="Search Student" />
 
     </group>
 
