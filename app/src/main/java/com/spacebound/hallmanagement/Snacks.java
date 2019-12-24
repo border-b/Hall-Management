@@ -1,4 +1,4 @@
-package com.example.hallmanager;
+package com.example.hallmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
