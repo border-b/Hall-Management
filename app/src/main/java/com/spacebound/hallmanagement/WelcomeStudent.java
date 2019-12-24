@@ -133,6 +133,13 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
             intent = new Intent(this,WelcomeStudent.class);
             startActivity(intent);
         }
+        else if(menuItem.getItemId()==R.id.nav_searchstudent)
+        {
+            intent = new Intent(this,SearchStudent.class);
+            startActivity(intent);
+        }
+
+
 
         return false;
     }
