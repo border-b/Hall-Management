@@ -15,4 +15,10 @@
     <string name="input_error_email_invalid">enter a valid email</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    
+    <string name="breakfast_text">Breakfast</string>
+    <string name="lunch_text">Lunch</string>
+    <string name="dinner_text">Dinner</string>
+    <string name="snacks_text">Snacks</string>
+    
 </resources>
