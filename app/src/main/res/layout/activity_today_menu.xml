@@ -21,6 +21,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/breakfast"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"                               
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -65,6 +67,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/lunch"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"                               
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -122,6 +126,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/dinner"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -166,6 +172,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Snacks"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
