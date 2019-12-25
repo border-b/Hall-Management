@@ -15,6 +15,14 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        adminlogin =(Button) findViewById(R.id.buttonLogin);
+        adminlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent15 = new Intent(Main2Activity.this, WelcomeAdmin.class);
+                startActivity(intent15);
+            }
+        });
 
     }
 }
