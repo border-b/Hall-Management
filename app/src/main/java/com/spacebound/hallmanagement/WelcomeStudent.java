@@ -80,7 +80,13 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
 
         Intent intent;
 
-        if(menuItem.getItemId()==R.id.nav_applyforseat)
+        if(menuItem.getItemId()==R.id.nav_SP)
+        {
+            intent = new Intent(this,StudentProfile.class);
+            startActivity(intent);
+        }
+
+        else if(menuItem.getItemId()==R.id.nav_applyforseat)
         {
             intent = new Intent(this,ApplyForSeat.class);
             startActivity(intent);
@@ -122,11 +128,6 @@ public class WelcomeStudent extends AppCompatActivity implements NavigationView.
             startActivity(intent);
         }
 
-        else if(menuItem.getItemId()==R.id.nav_SP)
-        {
-            intent = new Intent(this,StudentProfile.class);
-            startActivity(intent);
-        }
 
         else if(menuItem.getItemId()==R.id.nav_viewnoticeboard)
         {
