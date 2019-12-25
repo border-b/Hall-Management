@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Starter">
 
+
     <TextView
         android:id="@+id/textView14"
         android:layout_width="224dp"
@@ -14,10 +15,14 @@
         android:layout_marginTop="134dp"
         android:layout_marginEnd="94dp"
         android:layout_marginBottom="80dp"
-        android:text="   Hall Manager"
-        android:textSize="30sp"
+        android:background="@drawable/circlebackground"
+        android:text="    HallManager"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,6 +36,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/rectangle"
         android:text="Student Login"
+        android:backgroundTint="@color/blue"
         android:textColor="@color/blue"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button25"
@@ -50,6 +56,7 @@
         android:text="Admin Login"
         android:textColor="@color/blue"
         android:textSize="24sp"
+        android:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
