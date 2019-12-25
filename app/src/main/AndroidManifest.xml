@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WriteComplain"></activity>
+        <activity android:name=".StudentProfile"></activity>
+        <activity android:name=".TodayMenu" />
+        <activity android:name=".WriteComplain" />
         <activity android:name=".WelcomeAdmin" />
         <activity android:name=".VacantSeats" />
         <activity android:name=".UpdateNoticeBoard" />
-        <activity android:name=".TodayMenu" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SearchStudent" />
         <activity android:name=".SanitationProblem" />
@@ -33,6 +34,10 @@
         <activity android:name=".AllocateSeat" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".WelcomeStudent" />
+        <activity android:name=".Breakfast" />
+        <activity android:name=".Lunch" />
+        <activity android:name=".Dinner" />
+        <activity android:name=".Snacks" />
         <activity android:name=".SignUp" />
         <activity android:name=".Starter">
             <intent-filter>
